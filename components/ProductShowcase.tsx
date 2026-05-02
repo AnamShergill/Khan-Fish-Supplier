@@ -10,7 +10,7 @@ const products = [
     id: 1,
     name: 'Ribbon Fish',
     category: 'Top Export',
-    image: '/images/Ribbon-fish.jpg',
+    image: '/images/Ribbon-Fish.jpg',
     description: 'Widely exported to Thailand',
     destination: 'Thailand',
   },

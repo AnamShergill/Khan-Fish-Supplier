@@ -79,17 +79,13 @@ export default function HeroCarousel() {
           transition={{ duration: 0.8 }}
           className="absolute inset-0"
         >
-          {/* Background Image - Optimized with Next.js Image */}
+          {/* Background Image - Using native img for maximum quality */}
           <div className="absolute inset-0">
-            <Image
+            <img
               src={slides[currentSlide].image}
               alt={slides[currentSlide].headline}
-              fill
-              priority={currentSlide === 0}
-              quality={100}
-              sizes="100vw"
-              className="object-cover object-center"
-              unoptimized
+              className="w-full h-full object-cover object-center"
+              style={{ objectFit: 'cover' }}
             />
           </div>
           
