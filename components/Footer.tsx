@@ -157,8 +157,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-gold flex-shrink-0" />
-                <a href="mailto:Khanfishsupplier1@gmail.com" className="text-gray-300 hover:text-gold transition-colors duration-200">
-                  Khanfishsupplier1@gmail.com
+                <a href="mailto:info@khanfishsupplier.com" className="text-gray-300 hover:text-gold transition-colors duration-200">
+                  info@khanfishsupplier.com
                 </a>
               </li>
             </ul>

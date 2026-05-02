@@ -220,8 +220,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gold mb-1">Email</h4>
-                    <a href="mailto:Khanfishsupplier1@gmail.com" className="text-gray-300 hover:text-gold transition-colors break-all">
-                      Khanfishsupplier1@gmail.com
+                    <a href="mailto:info@khanfishsupplier.com" className="text-gray-300 hover:text-gold transition-colors break-all">
+                      info@khanfishsupplier.com
                     </a>
                   </div>
                 </div>
