@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${montserrat.variable} ${openSans.variable} ${playfair.variable} font-open-sans antialiased`}
+        className={`${montserrat.variable} ${openSans.variable} ${playfair.variable} font-open-sans antialiased overflow-x-hidden`}
       >
         {children}
       </body>

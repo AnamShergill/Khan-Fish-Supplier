@@ -91,6 +91,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="#local-distribution" className="text-gray-300 hover:text-gold transition-colors duration-200">
+                  Local Distribution
+                </Link>
+              </li>
+              <li>
                 <Link href="#products" className="text-gray-300 hover:text-gold transition-colors duration-200">
                   Our Products
                 </Link>
@@ -133,21 +138,27 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-gold flex-shrink-0 mt-1" />
                 <span className="text-gray-300">
-                  123 Harbor Drive<br />
-                  Coastal City, CC 12345<br />
-                  United States
+                  Suite No.A/21, First Floor<br />
+                  Commercial Center, West Wharf<br />
+                  Dock Yard Road<br />
+                  Karachi, Pakistan
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone size={20} className="text-gold flex-shrink-0" />
-                <a href="tel:+15551234567" className="text-gray-300 hover:text-gold transition-colors duration-200">
-                  +1 (555) 123-4567
-                </a>
+              <li className="flex items-start gap-3">
+                <Phone size={20} className="text-gold flex-shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+923102061037" className="text-gray-300 hover:text-gold transition-colors duration-200">
+                    +92-310-2061037
+                  </a>
+                  <a href="tel:+923222666392" className="text-gray-300 hover:text-gold transition-colors duration-200">
+                    +92-322-2666392
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-gold flex-shrink-0" />
-                <a href="mailto:info@seafoodmarket.com" className="text-gray-300 hover:text-gold transition-colors duration-200">
-                  info@seafoodmarket.com
+                <a href="mailto:Khanfishsupplier1@gmail.com" className="text-gray-300 hover:text-gold transition-colors duration-200">
+                  Khanfishsupplier1@gmail.com
                 </a>
               </li>
             </ul>

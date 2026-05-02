@@ -204,8 +204,11 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gold mb-1">Phone</h4>
-                    <a href="tel:+15551234567" className="text-gray-300 hover:text-gold transition-colors">
-                      +1 (555) 123-4567
+                    <a href="tel:+923102061037" className="text-gray-300 hover:text-gold transition-colors block">
+                      +92-310-2061037
+                    </a>
+                    <a href="tel:+923222666392" className="text-gray-300 hover:text-gold transition-colors block">
+                      +92-322-2666392
                     </a>
                   </div>
                 </div>
@@ -217,8 +220,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gold mb-1">Email</h4>
-                    <a href="mailto:info@khanfishsupplier.com" className="text-gray-300 hover:text-gold transition-colors break-all">
-                      info@khanfishsupplier.com
+                    <a href="mailto:Khanfishsupplier1@gmail.com" className="text-gray-300 hover:text-gold transition-colors break-all">
+                      Khanfishsupplier1@gmail.com
                     </a>
                   </div>
                 </div>
@@ -231,9 +234,10 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-gold mb-1">Headquarters</h4>
                     <p className="text-gray-300 leading-relaxed">
-                      123 Harbor Drive<br />
-                      Coastal City, CC 12345<br />
-                      United States
+                      Suite No.A/21, First Floor<br />
+                      Commercial Center, West Wharf<br />
+                      Dock Yard Road<br />
+                      Karachi, Pakistan
                     </p>
                   </div>
                 </div>
@@ -243,14 +247,14 @@ export default function ContactSection() {
             {/* Google Map */}
             <div className="bg-gray-200 rounded-lg shadow-xl overflow-hidden h-[300px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841374555634!2d-73.98784368459395!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14480.250374392464!2d67.03454439605017!3d24.86171168214206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%20No.A%2F21%2C%20First%20Floor%20Commercial%20Center%2C%20West%20Wharf%20Dock%20Yard%20Road%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1777718115493!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Khan Fish Supplier Location"
+                title="Khan Fish Supplier - Suite No.A/21, West Wharf, Karachi, Pakistan"
               />
             </div>
           </motion.div>
