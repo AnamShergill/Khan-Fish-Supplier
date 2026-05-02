@@ -28,11 +28,44 @@ export default function ContactSection() {
     
     setStatus('submitting');
 
-    // Simulate API call with 2-second timeout
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      // Web3Forms API endpoint
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // You'll need to replace this
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          message: formData.message,
+          subject: 'New Contact Form Submission - Khan Fish Supplier',
+          from_name: 'Khan Fish Supplier Website',
+          to_email: 'info@khanfishsupplier.com'
+        })
+      });
 
-    console.log('Form submitted:', formData);
-    setStatus('success');
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('success');
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: '',
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting the form. Please try again or contact us directly at info@khanfishsupplier.com');
+      setStatus('idle');
+    }
   };
 
   const handleChange = (

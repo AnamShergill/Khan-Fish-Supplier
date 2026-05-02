@@ -169,13 +169,15 @@ export default function ProductShowcase() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="aspect-video relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden bg-gray-100">
                 <Image
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-contain group-hover:scale-110 transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  loading="lazy"
+                  quality={75}
                 />
                 
                 {/* Overlay */}

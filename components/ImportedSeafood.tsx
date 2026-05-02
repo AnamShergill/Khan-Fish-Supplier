@@ -88,6 +88,8 @@ export default function ImportedSeafood() {
                     fill
                     className="object-contain"
                     sizes="(max-width: 1024px) 100vw, 50vw"
+                    quality={80}
+                    priority={currentImage === 0}
                   />
                   
                   {/* Badges */}
@@ -142,6 +144,8 @@ export default function ImportedSeafood() {
                         fill
                         className="object-contain p-2"
                         sizes="150px"
+                        quality={60}
+                        loading="lazy"
                       />
                     </button>
                   ))}

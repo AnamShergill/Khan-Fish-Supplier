@@ -79,13 +79,18 @@ export default function HeroCarousel() {
           transition={{ duration: 0.8 }}
           className="absolute inset-0"
         >
-          {/* Background Image - Using native img for maximum quality */}
+          {/* Background Image - Optimized for fast loading */}
           <div className="absolute inset-0">
-            <img
+            <Image
               src={slides[currentSlide].image}
               alt={slides[currentSlide].headline}
-              className="w-full h-full object-cover object-center"
-              style={{ objectFit: 'cover' }}
+              fill
+              priority={currentSlide === 0}
+              quality={75}
+              sizes="100vw"
+              className="object-cover object-center"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
             />
           </div>
           

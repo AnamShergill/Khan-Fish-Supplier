@@ -39,6 +39,8 @@ export default function AboutUs() {
               fill
               className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={80}
+              loading="lazy"
             />
           </motion.div>
 
@@ -58,7 +60,7 @@ export default function AboutUs() {
             {/* Body Paragraphs */}
             <div className="space-y-4 text-gray-700 text-base leading-relaxed">
               <p>
-                For over three decades, we have been at the forefront of seafood distribution, 
+                For more than 15 years, we have been at the forefront of seafood distribution, 
                 connecting premium suppliers with discerning buyers across local and international 
                 markets. Our commitment to excellence has made us the trusted partner for restaurants, 
                 retailers, and wholesalers who demand nothing but the finest quality seafood.
