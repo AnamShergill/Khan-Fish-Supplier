@@ -23,6 +23,7 @@ export default function Header() {
     { href: '#about', label: 'About' },
     { href: '#local-distribution', label: 'Local Distribution' },
     { href: '#products', label: 'Our Products' },
+    { href: '#imported-seafood', label: 'Imported Fish' },
     { href: '#contact', label: 'Contact' },
   ];
 

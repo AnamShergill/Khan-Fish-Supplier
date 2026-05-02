@@ -86,9 +86,10 @@ export default function HeroCarousel() {
               alt={slides[currentSlide].headline}
               fill
               priority={currentSlide === 0}
-              quality={90}
+              quality={100}
               sizes="100vw"
               className="object-cover object-center"
+              unoptimized
             />
           </div>
           

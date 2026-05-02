@@ -81,12 +81,12 @@ export default function ImportedSeafood() {
               {/* Image Gallery Side */}
               <div className="relative">
                 {/* Main Image */}
-                <div className="relative h-[400px] lg:h-[600px]">
+                <div className="relative h-[400px] lg:h-[600px] bg-gray-100">
                   <Image
                     src={productImages[currentImage].url}
                     alt={productImages[currentImage].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   
@@ -130,7 +130,7 @@ export default function ImportedSeafood() {
                     <button
                       key={img.id}
                       onClick={() => setCurrentImage(index)}
-                      className={`relative h-24 rounded-lg overflow-hidden transition-all duration-200 ${
+                      className={`relative h-24 rounded-lg overflow-hidden transition-all duration-200 bg-white ${
                         currentImage === index
                           ? 'ring-4 ring-gold scale-105'
                           : 'opacity-60 hover:opacity-100'
@@ -140,7 +140,7 @@ export default function ImportedSeafood() {
                         src={img.url}
                         alt={img.alt}
                         fill
-                        className="object-cover"
+                        className="object-contain p-2"
                         sizes="150px"
                       />
                     </button>
