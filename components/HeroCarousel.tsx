@@ -21,7 +21,7 @@ const slides = [
   },
   {
     id: 3,
-    image: '/images/hero-3.webp',
+    image: '/images/hero-3.png',
     headline: 'PREMIUM QUALITY',
     headlineAccent: 'SEAFOOD',
     subheadline: 'WHOLESALE PRICES',
