@@ -69,7 +69,7 @@ export default function HeroCarousel() {
   }, []);
 
   return (
-    <section id="home" className="relative h-[70vh] w-full overflow-hidden">
+    <section id="home" className="relative h-screen w-full overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -80,17 +80,18 @@ export default function HeroCarousel() {
           className="absolute inset-0"
         >
           {/* Background Image - Optimized for fast loading */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gray-900">
             <Image
               src={slides[currentSlide].image}
               alt={slides[currentSlide].headline}
               fill
               priority={currentSlide === 0}
-              quality={75}
+              quality={60}
               sizes="100vw"
               className="object-cover object-center"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
+              loading={currentSlide === 0 ? "eager" : "lazy"}
             />
           </div>
           

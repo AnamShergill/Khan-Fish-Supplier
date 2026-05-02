@@ -280,15 +280,16 @@ export default function ContactSection() {
             {/* Google Map */}
             <div className="bg-gray-200 rounded-lg shadow-xl overflow-hidden h-[300px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14480.250374392464!2d67.03454439605017!3d24.86171168214206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%20No.A%2F21%2C%20First%20Floor%20Commercial%20Center%2C%20West%20Wharf%20Dock%20Yard%20Road%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1777718115493!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.56664511402!2d66.98181007489248!3d24.844489345897404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315e2df96df61%3A0x9de2f4cae277e6b4!2sDockyards%20Rd%2C%20West%20Wharf%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1777754120697!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Khan Fish Supplier - Suite No.A/21, West Wharf, Karachi, Pakistan"
+                title="Khan Fish Supplier - Suite No.A/21, Commercial Center, West Wharf, Dock Yard Road, Karachi, Pakistan"
               />
+            </div>
             </div>
           </motion.div>
 
