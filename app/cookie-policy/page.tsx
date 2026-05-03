@@ -73,11 +73,6 @@ export default function CookiePolicy() {
                 ← Back to Home
               </Link>
             </div>
-                className="inline-block bg-gold text-deep-navy px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all duration-200"
-              >
-                ← Back to Home
-              </Link>
-            </div>
           </div>
         </div>
       </main>
