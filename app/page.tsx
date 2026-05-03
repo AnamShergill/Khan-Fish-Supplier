@@ -7,19 +7,23 @@ import ProductShowcase from '@/components/ProductShowcase';
 import ImportedSeafood from '@/components/ImportedSeafood';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import StructuredData from '@/components/StructuredData';
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
-      <Header />
-      <HeroCarousel />
-      <AboutUs />
-      <LocalDistribution />
-      <DistributorGrid />
-      <ProductShowcase />
-      <ImportedSeafood />
-      <ContactSection />
-      <Footer />
-    </main>
+    <>
+      <StructuredData />
+      <main className="min-h-screen overflow-x-hidden">
+        <Header />
+        <HeroCarousel />
+        <AboutUs />
+        <LocalDistribution />
+        <DistributorGrid />
+        <ProductShowcase />
+        <ImportedSeafood />
+        <ContactSection />
+        <Footer />
+      </main>
+    </>
   );
 }
