@@ -13,16 +13,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Image
-                src="/images/logo2.png"
-                alt="Khan Fish Supplier Logo"
-                width={120}
-                height={120}
-                className="h-20 w-auto"
-              />
+            <div className="flex items-center gap-1 mb-4">
+              <div className="relative">
+                <Image
+                  src="/images/fish.png"
+                  alt="Khan Fish Supplier Logo"
+                  width={160}
+                  height={160}
+                  className="h-28 w-auto drop-shadow-[0_4px_8px_rgba(0,0,0,0.3)] hover:drop-shadow-[0_6px_12px_rgba(212,175,55,0.4)] transition-all duration-300"
+                />
+              </div>
               <h3 className="font-montserrat font-bold text-2xl">
-                <span className="text-gold">KHAN</span> <span className="text-ice-white">FISH SUPPLIER</span>
+                <span className="text-ice-white">KHAN </span>
+                <span className="text-gold">FI</span>
+                <span className="text-ice-white">SH SUPPLIER</span>
               </h3>
             </div>
             <p className="text-gray-300 leading-relaxed mb-4">
@@ -60,16 +64,9 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-gold transition-colors duration-200">
-                  Sustainability
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-gold transition-colors duration-200">
-                  Certifications
-                </Link>
-              </li>
+              
+              
+              
             </ul>
           </div>
 
@@ -127,13 +124,13 @@ export default function Footer() {
               © {currentYear} KhanFishSupplier. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <Link href="#" className="text-gray-400 hover:text-gold transition-colors duration-200">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-gold transition-colors duration-200">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-gold transition-colors duration-200">
+              <Link href="/terms-of-service" className="text-gray-400 hover:text-gold transition-colors duration-200">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-gold transition-colors duration-200">
+              <Link href="/cookie-policy" className="text-gray-400 hover:text-gold transition-colors duration-200">
                 Cookie Policy
               </Link>
             </div>

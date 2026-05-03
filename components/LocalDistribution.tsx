@@ -104,20 +104,20 @@ export default function LocalDistribution() {
             <div className="flex flex-col gap-4 justify-center items-center">
               <a
                 href="#contact"
-                className="bg-gold text-deep-navy px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl w-full sm:w-auto text-center"
+                className="bg-gold text-deep-navy px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 hover:scale-105 hover:shadow-2xl transition-all duration-300 shadow-lg w-full sm:w-auto text-center transform"
               >
                 Get Wholesale Quote
               </a>
               <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                 <a
                   href="tel:+923102061037"
-                  className="bg-transparent border-2 border-gold text-gold px-6 py-3 rounded-md font-semibold hover:bg-gold hover:text-deep-navy transition-all duration-200 text-center"
+                  className="bg-transparent border-2 border-gold text-gold px-6 py-3 rounded-md font-semibold hover:bg-gold hover:text-deep-navy hover:scale-105 transition-all duration-300 text-center transform"
                 >
                   Call: +92-310-2061037
                 </a>
                 <a
                   href="tel:+923222666392"
-                  className="bg-transparent border-2 border-gold text-gold px-6 py-3 rounded-md font-semibold hover:bg-gold hover:text-deep-navy transition-all duration-200 text-center"
+                  className="bg-transparent border-2 border-gold text-gold px-6 py-3 rounded-md font-semibold hover:bg-gold hover:text-deep-navy hover:scale-105 transition-all duration-300 text-center transform"
                 >
                   Call: +92-322-2666392
                 </a>

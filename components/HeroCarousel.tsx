@@ -111,7 +111,7 @@ export default function HeroCarousel() {
                 </span>
                 {' '}
                 <span className="relative inline-block">
-                  <span className="text-gold">
+                  <span className="text-gold" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5), 0 0 20px rgba(212,175,55,0.3)' }}>
                     <TypingText 
                       text={slides[currentSlide].headlineAccent} 
                       delay={0.3 + slides[currentSlide].headline.length * 0.05 + 0.1} 

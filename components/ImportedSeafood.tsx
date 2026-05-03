@@ -198,20 +198,20 @@ export default function ImportedSeafood() {
                 <div className="flex flex-col gap-4">
                   <a
                     href="#contact"
-                    className="inline-block bg-gold text-deep-navy px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-deep-navy text-center"
+                    className="inline-block bg-gold text-deep-navy px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 hover:scale-105 hover:shadow-2xl transition-all duration-300 shadow-lg border-2 border-deep-navy text-center transform"
                   >
                     Request Quote
                   </a>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
                       href="tel:+923102061037"
-                      className="inline-block bg-transparent border-2 border-deep-navy text-deep-navy px-6 py-3 rounded-md font-semibold hover:bg-deep-navy hover:text-ice-white transition-all duration-200 text-center"
+                      className="inline-block bg-transparent border-2 border-deep-navy text-deep-navy px-6 py-3 rounded-md font-semibold hover:bg-deep-navy hover:text-ice-white hover:scale-105 transition-all duration-300 text-center transform"
                     >
                       Call: +92-310-2061037
                     </a>
                     <a
                       href="tel:+923222666392"
-                      className="inline-block bg-transparent border-2 border-deep-navy text-deep-navy px-6 py-3 rounded-md font-semibold hover:bg-deep-navy hover:text-ice-white transition-all duration-200 text-center"
+                      className="inline-block bg-transparent border-2 border-deep-navy text-deep-navy px-6 py-3 rounded-md font-semibold hover:bg-deep-navy hover:text-ice-white hover:scale-105 transition-all duration-300 text-center transform"
                     >
                       Call: +92-322-2666392
                     </a>
@@ -239,7 +239,7 @@ export default function ImportedSeafood() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-gold text-deep-navy px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all duration-200"
+              className="inline-block bg-gold text-deep-navy px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 hover:scale-105 hover:shadow-xl transition-all duration-300 transform"
             >
               Contact Us
             </a>

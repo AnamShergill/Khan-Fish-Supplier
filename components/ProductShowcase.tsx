@@ -189,7 +189,7 @@ export default function ProductShowcase() {
                     <p className="text-gold text-xs font-semibold mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-150">
                       📍 Exported to: {product.destination}
                     </p>
-                    <button className="bg-gold text-deep-navy px-4 py-2 rounded-md font-semibold text-sm hover:bg-opacity-90 transition-all duration-200 opacity-0 group-hover:opacity-100 delay-200">
+                    <button className="bg-gold text-deep-navy px-4 py-2 rounded-md font-semibold text-sm hover:bg-opacity-90 hover:scale-105 transition-all duration-300 opacity-0 group-hover:opacity-100 delay-200 transform">
                       Learn More
                     </button>
                   </div>
@@ -217,7 +217,7 @@ export default function ProductShowcase() {
         >
           <button
             onClick={() => setShowAll(!showAll)}
-            className="inline-flex items-center gap-2 bg-gold text-deep-navy px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-deep-navy"
+            className="inline-flex items-center gap-2 bg-gold text-deep-navy px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 hover:scale-105 hover:shadow-2xl transition-all duration-300 shadow-lg border-2 border-deep-navy transform"
           >
             {showAll ? (
               <>

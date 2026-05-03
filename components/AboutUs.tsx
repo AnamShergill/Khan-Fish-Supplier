@@ -41,6 +41,7 @@ export default function AboutUs() {
               sizes="(max-width: 1024px) 100vw, 50vw"
               quality={80}
               loading="lazy"
+              unoptimized
             />
           </motion.div>
 
