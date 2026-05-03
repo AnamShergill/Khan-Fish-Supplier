@@ -290,7 +290,6 @@ export default function ContactSection() {
                 title="Khan Fish Supplier - Suite No.A/21, Commercial Center, West Wharf, Dock Yard Road, Karachi, Pakistan"
               />
             </div>
-            </div>
           </motion.div>
 
         </div>
