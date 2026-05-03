@@ -19,7 +19,7 @@ export default function AboutUs() {
             About <span className="text-gold">Us</span>
           </h2>
           <p className="text-gray-600 text-lg sm:text-xl max-w-3xl mx-auto">
-            Your trusted partner in premium seafood distribution since 1995
+            Your trusted partner in premium seafood distribution since 2010
           </p>
         </motion.div>
 
