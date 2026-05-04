@@ -36,7 +36,7 @@ export default function DistributorGrid() {
             Why <span className="text-gold">Choose Us</span>
           </h2>
           <p className="text-gray-600 text-lg sm:text-xl max-w-3xl mx-auto">
-            More tha 15 years of excellence in seafood distribution, combining traditional expertise with modern logistics technology.
+            More than 15 years of excellence in seafood distribution, combining traditional expertise with modern logistics technology.
           </p>
         </motion.div>
 
