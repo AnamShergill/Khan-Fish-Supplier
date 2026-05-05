@@ -37,7 +37,7 @@ export default function ContactSection() {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // You'll need to replace this
+          access_key:'5f1edad2-fb19-40fc-a4db-7f27f6db6dc7', // You'll need to replace this
           name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
           message: formData.message,
