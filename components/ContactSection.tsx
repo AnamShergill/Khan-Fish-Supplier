@@ -28,6 +28,15 @@ export default function ContactSection() {
     
     setStatus('submitting');
 
+    // Get access key from environment variable
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    
+    if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY_HERE') {
+      alert('Contact form is not configured yet. Please email us directly at info@khanfishsupplier.com or call +92-310-2061037');
+      setStatus('idle');
+      return;
+    }
+
     try {
       // Web3Forms API endpoint
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -37,7 +46,7 @@ export default function ContactSection() {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key:'5f1edad2-fb19-40fc-a4db-7f27f6db6dc7', // You'll need to replace this
+          access_key: accessKey,
           name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
           message: formData.message,
@@ -58,6 +67,11 @@ export default function ContactSection() {
           email: '',
           message: '',
         });
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setStatus('idle');
+        }, 5000);
       } else {
         throw new Error('Form submission failed');
       }
