@@ -17,7 +17,16 @@ export default function Home() {
     <>
       <StructuredData />
       <SEOContent />
-      <main className="min-h-screen overflow-x-hidden">
+      {/* Fixed Background Image */}
+      <div 
+        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{
+          backgroundImage: 'url(/images/bg-image.jpg)',
+          backgroundAttachment: 'fixed'
+        }}
+      />
+      {/* Scrollable Content Overlay */}
+      <main className="relative z-10 min-h-screen overflow-x-hidden">
         <Header />
         <HeroCarousel />
         <AboutUs />

@@ -20,7 +20,7 @@ const otherCities = [
 
 export default function AreasWeServe() {
   return (
-    <section id="areas-we-serve" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-white">
+    <section id="areas-we-serve" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-deep-navy/95 to-deep-navy/85">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -36,10 +36,10 @@ export default function AreasWeServe() {
               Service Areas
             </span>
           </div>
-          <h2 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-deep-navy mb-6">
+          <h2 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-ice-white mb-6">
             Fish Supplier Serving <span className="text-gold">All of Karachi</span>
           </h2>
-          <p className="text-gray-600 text-lg sm:text-xl max-w-3xl mx-auto">
+          <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto">
             Fast, reliable seafood delivery across Karachi and Sindh. Same-day delivery available for orders placed before 12 PM.
           </p>
         </motion.div>
@@ -52,7 +52,7 @@ export default function AreasWeServe() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="bg-white rounded-lg shadow-xl p-8"
+            className="bg-ice-white rounded-lg shadow-xl p-8"
           >
             <div className="flex items-center gap-3 mb-6">
               <MapPin className="text-gold" size={28} />
@@ -60,7 +60,7 @@ export default function AreasWeServe() {
                 Karachi Areas We Serve
               </h3>
             </div>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 mb-6">
               We deliver fresh and frozen seafood to all major areas of Karachi with same-day delivery options:
             </p>
             <div className="grid grid-cols-2 gap-3">
@@ -94,14 +94,14 @@ export default function AreasWeServe() {
             className="space-y-8"
           >
             {/* Sindh Cities */}
-            <div className="bg-deep-navy text-ice-white rounded-lg shadow-xl p-8">
+            <div className="bg-ice-white rounded-lg shadow-xl p-8">
               <div className="flex items-center gap-3 mb-6">
                 <MapPin className="text-gold" size={28} />
-                <h3 className="font-montserrat text-2xl font-bold">
+                <h3 className="font-montserrat text-2xl font-bold text-deep-navy">
                   Other Cities in Sindh
                 </h3>
               </div>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-700 mb-6">
                 We also supply seafood to major cities across Sindh province:
               </p>
               <div className="grid grid-cols-2 gap-3">
@@ -115,38 +115,38 @@ export default function AreasWeServe() {
                     className="flex items-start gap-2"
                   >
                     <CheckCircle size={16} className="text-gold flex-shrink-0 mt-1" />
-                    <span className="text-gray-200 text-sm">{city}</span>
+                    <span className="text-gray-700 text-sm">{city}</span>
                   </motion.div>
                 ))}
               </div>
               <div className="mt-6 p-4 bg-gold/20 rounded-lg border border-gold/30">
-                <p className="text-sm text-gray-200">
-                  <strong className="text-gold">Bulk Orders:</strong> Special rates available for orders outside Karachi
+                <p className="text-sm text-gray-700">
+                  <strong className="text-deep-navy">Bulk Orders:</strong> Special rates available for orders outside Karachi
                 </p>
               </div>
             </div>
 
             {/* Delivery Info */}
-            <div className="bg-gradient-to-br from-gold/10 to-gold/5 rounded-lg shadow-lg p-8 border-2 border-gold/30">
+            <div className="bg-ice-white rounded-lg shadow-lg p-8 border-2 border-gold/30">
               <h3 className="font-montserrat text-xl font-bold text-deep-navy mb-4">
                 Delivery Information
               </h3>
-              <ul className="space-y-3 text-gray-700">
+              <ul className="space-y-3 text-gray-800">
                 <li className="flex items-start gap-2">
                   <CheckCircle size={18} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span><strong>Same-Day Delivery:</strong> Karachi (orders before 12 PM)</span>
+                  <span className="text-gray-800"><strong className="text-deep-navy">Same-Day Delivery:</strong> Karachi (orders before 12 PM)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={18} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span><strong>Next-Day Delivery:</strong> Other Sindh cities</span>
+                  <span className="text-gray-800"><strong className="text-deep-navy">Next-Day Delivery:</strong> Other Sindh cities</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={18} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span><strong>Temperature-Controlled:</strong> All deliveries</span>
+                  <span className="text-gray-800"><strong className="text-deep-navy">Temperature-Controlled:</strong> All deliveries</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={18} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span><strong>Minimum Order:</strong> No minimum for Karachi</span>
+                  <span className="text-gray-800"><strong className="text-deep-navy">Minimum Order:</strong> No minimum for Karachi</span>
                 </li>
               </ul>
               <div className="mt-6">
@@ -170,11 +170,11 @@ export default function AreasWeServe() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <div className="bg-deep-navy text-ice-white rounded-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-ice-white text-deep-navy rounded-lg p-8 max-w-4xl mx-auto">
             <h3 className="font-montserrat text-2xl sm:text-3xl font-bold text-gold mb-4">
               Don't See Your Area Listed?
             </h3>
-            <p className="text-gray-300 text-lg mb-6">
+            <p className="text-gray-700 text-lg mb-6">
               We're expanding our delivery network. Contact us to check if we can deliver to your location.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -186,7 +186,7 @@ export default function AreasWeServe() {
               </a>
               <a
                 href="tel:+923222666392"
-                className="inline-block bg-transparent border-2 border-gold text-gold px-8 py-3 rounded-md font-semibold hover:bg-gold hover:text-deep-navy hover:scale-105 transition-all duration-300 transform"
+                className="inline-block bg-transparent border-2 border-deep-navy text-deep-navy px-8 py-3 rounded-md font-semibold hover:bg-deep-navy hover:text-ice-white hover:scale-105 transition-all duration-300 transform"
               >
                 Call: +92-322-2666392
               </a>

@@ -59,10 +59,15 @@ const TypingText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [nextSlide, setNextSlide] = useState(1);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      setCurrentSlide((prev) => {
+        const next = (prev + 1) % slides.length;
+        setNextSlide((next + 1) % slides.length);
+        return next;
+      });
     }, 6000);
 
     return () => clearInterval(timer);
@@ -70,84 +75,99 @@ export default function HeroCarousel() {
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
+      {/* Preload all carousel images */}
+      {slides.map((slide) => (
+        <link
+          key={`preload-${slide.id}`}
+          rel="preload"
+          as="image"
+          href={slide.image}
+        />
+      ))}
+
+      {/* Render all images but only show current one */}
+      {slides.map((slide, index) => (
+        <div
+          key={slide.id}
+          className={`absolute inset-0 transition-opacity duration-500 ${
+            index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          }`}
+        >
+          {/* Background Image */}
+          <div className="absolute inset-0 bg-gray-900">
+            <Image
+              src={slide.image}
+              alt={slide.headline}
+              fill
+              priority={index === 0}
+              quality={75}
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+          </div>
+          
+          {/* Dark Overlay for better text visibility */}
+          <div className="absolute inset-0 bg-black/30 z-10" />
+        </div>
+      ))}
+
+      {/* Content Overlay */}
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
-          className="absolute inset-0"
+          transition={{ duration: 0.5 }}
+          className="relative h-full flex items-center justify-center z-20"
         >
-          {/* Background Image - Optimized for fast loading */}
-          <div className="absolute inset-0 bg-gray-900">
-            <Image
-              src={slides[currentSlide].image}
-              alt={slides[currentSlide].headline}
-              fill
-              priority={currentSlide === 0}
-              quality={60}
-              sizes="100vw"
-              className="object-cover object-center"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
-              loading={currentSlide === 0 ? "eager" : "lazy"}
-            />
-          </div>
-          
-          {/* Dark Overlay for better text visibility */}
-          <div className="absolute inset-0 bg-black/30 z-10" />
-
-          {/* Centered Content */}
-          <div className="relative h-full flex items-center justify-center z-20">
-            <div className="text-center px-4 sm:px-6 lg:px-8">
-              {/* Main Headline with Typing Animation */}
-              <motion.h1
-                key={`headline-${currentSlide}`}
-                className="font-montserrat font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 tracking-wider"
-              >
-                <span className="text-ice-white">
-                  <TypingText text={slides[currentSlide].headline} delay={0.3} />
-                </span>
-                {' '}
-                <span className="relative inline-block">
-                  <span className="text-gold" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5), 0 0 20px rgba(212,175,55,0.3)' }}>
-                    <TypingText 
-                      text={slides[currentSlide].headlineAccent} 
-                      delay={0.3 + slides[currentSlide].headline.length * 0.05 + 0.1} 
-                    />
-                  </span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 right-0 h-1 bg-deep-navy"
-                    initial={{ scaleX: 0 }}
-                    animate={{ scaleX: 1 }}
-                    transition={{ 
-                      delay: 0.3 + (slides[currentSlide].headline.length + slides[currentSlide].headlineAccent.length) * 0.05 + 0.2,
-                      duration: 0.5,
-                      ease: "easeOut"
-                    }}
-                    style={{ transformOrigin: 'left' }}
+          <div className="text-center px-4 sm:px-6 lg:px-8">
+            {/* Main Headline with Typing Animation */}
+            <motion.h1
+              key={`headline-${currentSlide}`}
+              className="font-montserrat font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 tracking-wider"
+            >
+              <span className="text-ice-white">
+                <TypingText text={slides[currentSlide].headline} delay={0.3} />
+              </span>
+              {' '}
+              <span className="relative inline-block">
+                <span className="text-gold" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5), 0 0 20px rgba(212,175,55,0.3)' }}>
+                  <TypingText 
+                    text={slides[currentSlide].headlineAccent} 
+                    delay={0.3 + slides[currentSlide].headline.length * 0.05 + 0.1} 
                   />
                 </span>
-              </motion.h1>
-
-              {/* Subheadline with Typing Animation */}
-              <motion.p
-                key={`subheadline-${currentSlide}`}
-                className="text-ice-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-light tracking-widest"
-              >
-                <TypingText 
-                  text={slides[currentSlide].subheadline} 
-                  delay={0.3 + (slides[currentSlide].headline.length + slides[currentSlide].headlineAccent.length) * 0.05 + 0.3} 
+                <motion.span
+                  className="absolute bottom-0 left-0 right-0 h-1 bg-deep-navy"
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ 
+                    delay: 0.3 + (slides[currentSlide].headline.length + slides[currentSlide].headlineAccent.length) * 0.05 + 0.2,
+                    duration: 0.5,
+                    ease: "easeOut"
+                  }}
+                  style={{ transformOrigin: 'left' }}
                 />
-              </motion.p>
-            </div>
+              </span>
+            </motion.h1>
+
+            {/* Subheadline with Typing Animation */}
+            <motion.p
+              key={`subheadline-${currentSlide}`}
+              className="text-ice-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-light tracking-widest"
+            >
+              <TypingText 
+                text={slides[currentSlide].subheadline} 
+                delay={0.3 + (slides[currentSlide].headline.length + slides[currentSlide].headlineAccent.length) * 0.05 + 0.3} 
+              />
+            </motion.p>
           </div>
         </motion.div>
       </AnimatePresence>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
         {slides.map((_, index) => (
           <button
             key={index}

@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
     
     // Aggressive quality settings for better performance
-    qualities: [50, 65, 75],
+    qualities: [50, 60, 65, 75, 80],
     
     // Long cache TTL for better performance (1 year)
     minimumCacheTTL: 31536000,

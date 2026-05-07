@@ -76,7 +76,7 @@ export default function FAQSection() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <section id="faq" className="py-20 sm:py-24 lg:py-32 bg-white">
+      <section id="faq" className="py-20 sm:py-24 lg:py-32 bg-white/95">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <motion.div
@@ -103,14 +103,14 @@ export default function FAQSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="border-2 border-gray-200 rounded-lg overflow-hidden hover:border-gold transition-colors duration-300"
+                className="border-2 border-deep-navy rounded-lg overflow-hidden hover:border-gold transition-colors duration-300"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full flex items-center justify-between p-6 text-left bg-deep-navy hover:bg-deep-navy/90 transition-colors duration-200"
                   aria-expanded={openIndex === index}
                 >
-                  <h3 className="font-montserrat font-bold text-lg text-deep-navy pr-4">
+                  <h3 className="font-montserrat font-bold text-lg text-ice-white pr-4">
                     {faq.question}
                   </h3>
                   <ChevronDown
@@ -126,7 +126,7 @@ export default function FAQSection() {
                     openIndex === index ? 'max-h-96' : 'max-h-0'
                   }`}
                 >
-                  <div className="p-6 pt-0 text-gray-700 leading-relaxed">
+                  <div className="p-6 pt-0 bg-white text-gray-700 leading-relaxed">
                     {faq.answer}
                   </div>
                 </div>

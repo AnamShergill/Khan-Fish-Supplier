@@ -28,7 +28,7 @@ const localServices = [
 
 export default function LocalDistribution() {
   return (
-    <section id="local-distribution" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-deep-navy to-deep-navy/90 text-ice-white relative overflow-hidden">
+    <section id="local-distribution" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-deep-navy/95 to-deep-navy/85 text-ice-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

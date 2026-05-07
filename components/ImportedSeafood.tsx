@@ -44,7 +44,7 @@ export default function ImportedSeafood() {
   };
 
   return (
-    <section id="imported-seafood" className="py-20 sm:py-24 lg:py-32 bg-white">
+    <section id="imported-seafood" className="py-20 sm:py-24 lg:py-32 bg-white/95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

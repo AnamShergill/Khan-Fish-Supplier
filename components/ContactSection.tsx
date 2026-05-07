@@ -90,7 +90,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 sm:py-24 lg:py-32 bg-white">
+    <section id="contact" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-deep-navy/95 to-deep-navy/85">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -100,10 +100,10 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-deep-navy mb-6">
+          <h2 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-ice-white mb-6">
             Contact & <span className="text-gold">Location</span>
           </h2>
-          <p className="text-gray-600 text-lg sm:text-xl max-w-3xl mx-auto">
+          <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto">
             Get in touch with us today. We're here to answer your questions and discuss your seafood needs.
           </p>
         </motion.div>
@@ -119,7 +119,7 @@ export default function ContactSection() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-3"
           >
-            <div className="bg-[#F8F9FA] rounded-lg shadow-xl p-8 sm:p-12 h-full flex flex-col">
+            <div className="bg-ice-white rounded-lg shadow-xl p-8 sm:p-12 h-full flex flex-col">
               <h3 className="font-montserrat text-2xl font-bold text-deep-navy mb-6">
                 Send Us a Message
               </h3>
@@ -238,7 +238,7 @@ export default function ContactSection() {
             className="lg:col-span-2 space-y-8"
           >
             {/* Contact Details */}
-            <div className="bg-deep-navy text-ice-white rounded-lg shadow-xl p-8">
+            <div className="bg-ice-white rounded-lg shadow-xl p-8">
               <h3 className="font-montserrat text-2xl font-bold text-gold mb-6">
                 Get In Touch
               </h3>
@@ -251,10 +251,10 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gold mb-1">Phone</h4>
-                    <a href="tel:+923102061037" className="text-gray-300 hover:text-gold transition-colors block">
+                    <a href="tel:+923102061037" className="text-gray-700 hover:text-gold transition-colors block">
                       +92-310-2061037
                     </a>
-                    <a href="tel:+923222666392" className="text-gray-300 hover:text-gold transition-colors block">
+                    <a href="tel:+923222666392" className="text-gray-700 hover:text-gold transition-colors block">
                       +92-322-2666392
                     </a>
                   </div>
@@ -267,7 +267,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gold mb-1">Email</h4>
-                    <a href="mailto:info@khanfishsupplier.com" className="text-gray-300 hover:text-gold transition-colors break-all">
+                    <a href="mailto:info@khanfishsupplier.com" className="text-gray-700 hover:text-gold transition-colors break-all">
                       info@khanfishsupplier.com
                     </a>
                   </div>
@@ -280,7 +280,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gold mb-1">Headquarters</h4>
-                    <p className="text-gray-300 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed">
                       Suite No.A/21, First Floor<br />
                       Commercial Center, West Wharf<br />
                       Dock Yard Road<br />

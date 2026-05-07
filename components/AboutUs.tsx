@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function AboutUs() {
   return (
-    <section id="about" className="py-16 sm:py-20 lg:py-24 bg-[#F8F9FA]">
+    <section id="about" className="py-16 sm:py-20 lg:py-24 bg-[#F8F9FA]/95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

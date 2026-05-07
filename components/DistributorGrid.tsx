@@ -23,7 +23,7 @@ const features = [
 
 export default function DistributorGrid() {
   return (
-    <section id="about" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-ice-white to-gray-50">
+    <section id="about" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-ice-white/95 to-gray-50/95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
