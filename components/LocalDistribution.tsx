@@ -71,7 +71,7 @@ export default function LocalDistribution() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-ice-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-ice-white/20 transition-all duration-300 border border-gold/20 hover:border-gold/50"
+              className="bg-deep-navy backdrop-blur-sm rounded-lg p-6 hover:bg-deep-navy/90 transition-all duration-300 border border-gold/30 hover:border-gold shadow-xl"
             >
               <div className="bg-gold/20 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <service.icon className="text-gold" size={32} />
@@ -94,7 +94,7 @@ export default function LocalDistribution() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center"
         >
-          <div className="bg-gold/10 border-2 border-gold rounded-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-deep-navy border-2 border-gold rounded-lg p-8 max-w-4xl mx-auto shadow-xl">
             <h3 className="font-montserrat text-2xl sm:text-3xl font-bold text-gold mb-4">
               Need Fresh Seafood for Your Business?
             </h3>

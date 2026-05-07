@@ -37,7 +37,7 @@ export default function AboutUs() {
               src="/images/about.png"
               alt="Khan Fish Supplier - Professional cold-storage facility in Karachi"
               fill
-              className="object-cover object-center sm:object-top"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
               quality={65}
               loading="lazy"
