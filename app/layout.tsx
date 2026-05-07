@@ -21,26 +21,41 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Khan Fish Supplier | Premium Seafood Export & Distribution in Karachi, Pakistan",
-  description: "Leading seafood supplier in Pakistan. Export premium quality Ribbon Fish, Stingray, Sharks, Eels, Indian Mackerel, Pomfret & more to Thailand, Malaysia, Middle East. Local distribution to restaurants & hotels in Karachi.",
+  title: "Best Fish Supplier in Karachi | Wholesale Seafood Distributor Pakistan | Khan Fish Supplier",
+  description: "Leading fish supplier in Karachi, Pakistan. Wholesale & retail seafood distributor serving restaurants, hotels & markets. Fresh & frozen fish, shrimp, lobster. Call +92-310-2061037 for quotes.",
   keywords: [
+    // Primary Local Keywords
+    "fish supplier karachi",
+    "seafood supplier karachi",
+    "best fish supplier karachi",
+    "wholesale fish supplier karachi",
+    "frozen fish supplier pakistan",
+    "fish distributor karachi",
+    "seafood distributor pakistan",
+    "seafood wholesaler karachi",
+    // Service Keywords
+    "restaurant fish supplier karachi",
+    "hotel seafood supplier pakistan",
+    "retail fish supplier karachi",
+    "imported seafood supplier pakistan",
+    // Product Keywords
+    "shrimp supplier karachi",
+    "lobster supplier karachi",
+    "prawns supplier pakistan",
+    "pomfret fish supplier karachi",
+    "red snapper supplier karachi",
+    "pangasius fillet supplier pakistan",
+    "frozen seafood company karachi",
+    // Location Keywords
+    "west wharf fish supplier",
+    "dock yard road seafood",
+    "karachi fish market supplier",
+    // Export Keywords
+    "seafood exporters pakistan",
+    "fish export company karachi",
+    // Brand
     "Khan Fish Supplier",
-    "seafood export Pakistan",
-    "fish supplier Karachi",
-    "wholesale seafood Pakistan",
-    "Ribbon Fish export",
-    "Stingray export Thailand",
-    "Indian Mackerel supplier",
-    "Pomfret fish Pakistan",
-    "seafood distributor Karachi",
-    "fresh fish supplier",
-    "frozen seafood export",
-    "Pangasius fillets Vietnam",
-    "West Wharf Karachi",
-    "seafood cold chain",
-    "halal seafood export",
-    "restaurant fish supplier",
-    "hotel seafood distributor"
+    "khan fish supplier karachi"
   ].join(", "),
   authors: [{ name: "Khan Fish Supplier" }],
   creator: "Khan Fish Supplier",
@@ -66,16 +81,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Khan Fish Supplier | Premium Seafood Export & Distribution",
-    description: "Leading seafood supplier in Pakistan. Export premium quality seafood to international markets. Local distribution in Karachi.",
+    title: "Best Fish Supplier in Karachi | Wholesale Seafood Distributor | Khan Fish Supplier",
+    description: "Leading fish supplier in Karachi. Wholesale & retail seafood distributor serving restaurants, hotels & markets across Pakistan. Fresh & frozen fish delivery.",
     url: 'https://khanfishsupplier.com',
     siteName: 'Khan Fish Supplier',
     images: [
       {
-        url: '/images/logo2.png',
+        url: '/images/fish.png',
         width: 1200,
         height: 630,
-        alt: 'Khan Fish Supplier Logo',
+        alt: 'Khan Fish Supplier - Best Fish Supplier in Karachi Pakistan',
       },
     ],
     locale: 'en_US',
@@ -83,9 +98,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Khan Fish Supplier | Premium Seafood Export & Distribution',
-    description: 'Leading seafood supplier in Pakistan. Export premium quality seafood to international markets.',
-    images: ['/images/logo2.png'],
+    title: 'Best Fish Supplier in Karachi | Khan Fish Supplier',
+    description: 'Leading fish supplier in Karachi. Wholesale & retail seafood distributor. Fresh & frozen fish delivery across Pakistan.',
+    images: ['/images/fish.png'],
   },
   robots: {
     index: true,
@@ -103,6 +118,12 @@ export const metadata: Metadata = {
     // google: 'your-google-verification-code',
     // yandex: 'your-yandex-verification-code',
     // bing: 'your-bing-verification-code',
+  },
+  other: {
+    'geo.region': 'PK-SD',
+    'geo.placename': 'Karachi',
+    'geo.position': '24.844489;66.981810',
+    'ICBM': '24.844489, 66.981810',
   },
 };
 
