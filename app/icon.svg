@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#003366"/>
+  
+  <!-- Fish body - simplified and bold -->
+  <path d="M380 256C380 256 340 200 280 200C220 200 180 230 140 256C180 282 220 312 280 312C340 312 380 256 380 256Z" fill="#D4AF37" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Fish tail -->
+  <path d="M140 256L100 220L120 256L100 292L140 256Z" fill="#D4AF37" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Fish eye -->
+  <circle cx="300" cy="240" r="12" fill="#003366"/>
+  
+  <!-- Fish fins -->
+  <path d="M240 256L220 280L240 270Z" fill="#D4AF37" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M240 256L220 232L240 242Z" fill="#D4AF37" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Decorative scales -->
+  <circle cx="260" cy="256" r="8" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="280" cy="270" r="8" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="280" cy="242" r="8" fill="#FFFFFF" opacity="0.3"/>
+</svg>

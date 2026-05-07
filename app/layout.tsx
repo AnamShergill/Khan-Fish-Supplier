@@ -47,13 +47,14 @@ export const metadata: Metadata = {
   publisher: "Khan Fish Supplier",
   icons: {
     icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
       { url: '/images/fish.png', sizes: '32x32', type: 'image/png' },
       { url: '/images/fish.png', sizes: '16x16', type: 'image/png' },
     ],
     apple: [
       { url: '/images/fish.png', sizes: '180x180', type: 'image/png' },
     ],
-    shortcut: '/images/fish.png',
+    shortcut: '/icon.svg',
   },
   formatDetection: {
     email: false,
