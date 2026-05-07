@@ -45,6 +45,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Khan Fish Supplier" }],
   creator: "Khan Fish Supplier",
   publisher: "Khan Fish Supplier",
+  icons: {
+    icon: [
+      { url: '/images/fish.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/fish.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/fish.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/images/fish.png',
+  },
   formatDetection: {
     email: false,
     address: false,
