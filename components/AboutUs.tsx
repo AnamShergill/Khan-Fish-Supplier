@@ -35,13 +35,14 @@ export default function AboutUs() {
           >
             <Image
               src="/images/about.png"
-              alt="Professional cold-storage facility"
+              alt="Khan Fish Supplier - Professional cold-storage facility in Karachi"
               fill
               className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
-              quality={80}
+              quality={65}
               loading="lazy"
-              unoptimized
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
             />
           </motion.div>
 
