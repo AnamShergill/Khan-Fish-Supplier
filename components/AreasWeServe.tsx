@@ -40,7 +40,7 @@ export default function AreasWeServe() {
             Fish Supplier Serving <span className="text-gold">All of Karachi</span>
           </h2>
           <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto">
-            Fast, reliable seafood delivery across Karachi and Sindh. Same-day delivery available for orders placed before 12 PM.
+            Fast, reliable seafood delivery across Karachi and Sindh. Next-day delivery for all orders placed.
           </p>
         </motion.div>
 
@@ -61,7 +61,7 @@ export default function AreasWeServe() {
               </h3>
             </div>
             <p className="text-gray-700 mb-6">
-              We deliver fresh and frozen seafood to all major areas of Karachi with same-day delivery options:
+              We deliver fresh and frozen seafood to all major areas of Karachi with next-day delivery:
             </p>
             <div className="grid grid-cols-2 gap-3">
               {karachiAreas.map((area, index) => (
@@ -80,7 +80,7 @@ export default function AreasWeServe() {
             </div>
             <div className="mt-6 p-4 bg-gold/10 rounded-lg border border-gold/30">
               <p className="text-sm text-gray-700">
-                <strong className="text-deep-navy">Same-Day Delivery:</strong> Available for orders placed before 12 PM in Karachi city limits
+                <strong className="text-deep-navy">Next-Day Delivery:</strong> Available for all orders placed in Karachi city limits
               </p>
             </div>
           </motion.div>
@@ -134,7 +134,7 @@ export default function AreasWeServe() {
               <ul className="space-y-3 text-gray-800">
                 <li className="flex items-start gap-2">
                   <CheckCircle size={18} className="text-gold flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-800"><strong className="text-deep-navy">Same-Day Delivery:</strong> Karachi (orders before 12 PM)</span>
+                  <span className="text-gray-800"><strong className="text-deep-navy">Next-Day Delivery:</strong> Karachi (all orders)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={18} className="text-gold flex-shrink-0 mt-0.5" />

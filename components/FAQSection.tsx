@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: "What areas in Karachi do you deliver seafood to?",
-    answer: "We deliver fresh and frozen seafood across all areas of Karachi including Clifton, DHA, Gulshan-e-Iqbal, Saddar, North Nazimabad, Malir, Korangi, Landhi, and surrounding areas. We offer same-day delivery for orders placed before 12 PM within Karachi city limits."
+    answer: "We deliver fresh and frozen seafood across all areas of Karachi including Clifton, DHA, Gulshan-e-Iqbal, Saddar, North Nazimabad, Malir, Korangi, Landhi, and surrounding areas. We offer next-day delivery for all orders placed within Karachi city limits."
   },
   {
     question: "Do you supply seafood to restaurants and hotels?",

@@ -21,7 +21,7 @@ export default function SEOContent() {
         </p>
         <p>
           Contact Khan Fish Supplier today for wholesale fish prices, restaurant seafood supply, hotel seafood procurement, or retail fish delivery in Karachi. 
-          Call +92-310-2061037 or +92-322-2666392 for immediate quotes and same-day delivery across Karachi.
+          Call +92-310-2061037 or +92-322-2666392 for immediate quotes and next-day delivery across Karachi.
         </p>
       </div>
     </>
